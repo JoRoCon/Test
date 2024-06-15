@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mushroom Company Branding Guide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial, sans-serif';
+        }
+        .container {
+            padding: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .branding-card {
+            background: linear-gradient(135deg, #ff00ff, #00ffff);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .branding-card:hover {
+            transform: scale(1.05);
+        }
+        .branding-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .branding-card h3 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            color: #00ffff;
+        }
+        .branding-card p {
+            font-size: 1rem;
+            color: #ff00ff;
+        }
+        .branding-card a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Mushroom Company</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#" role="button">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="grid">
+            <section class="branding-card">
+                <img src="https://source.unsplash.com/random/600x600?mushroom" alt="Mushroom Image">
+                <h3>Vibrant Mushroom</h3>
+                <p>Abstract, colorful images that capture attention.</p>
+                <a href="https://source.unsplash.com/random/600x600?mushroom" target="_blank">Source</a>
+            </section>
+            <section class="branding-card">
+                <img src="https://source.unsplash.com/random/600x600?science" alt="Science Image">
+                <h3>Scientific Research</h3>
+                <p>Futuristic and modern visuals for science and research products.</p>
+                <a href="https://source.unsplash.com/random/600x600?science" target="_blank">Source</a>
+            </section>
+            <section class="branding-card">
+                <img src="https://source.unsplash.com/random/600x600?vegetables" alt="Vegetables Image">
+                <h3>Healthy Vegetables</h3>
+                <p>Bright and engaging images for fresh produce.</p>
+                <a href="https://source.unsplash.com/random/600x600?vegetables" target="_blank">Source</a>
+            </section>
+        </div>
+    </main>
+
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Subscribe for Updates</h2>
+                    <h3>Get the latest news and products directly to your inbox</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required />
+                    <input type="email" id="email" name="email" placeholder="Email
